@@ -30,7 +30,7 @@ authorsRouter.get('/',function(req,res){
     Authordata.find()
     .then(function(authors){
         res.render("authors",{
-        nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'}],
+            nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'},{link:'/admin',name:'ADD BOOK'},{link:'/admin1',name:'ADD AUTHOR'}],
         title:'Library',
         authors,
     });

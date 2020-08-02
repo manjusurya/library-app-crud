@@ -99,24 +99,24 @@
               <div class="col-md-4">
                
                  
-                  <form method="POST" action="/signup/login" onsubmit="return validate() "> 
+                  <form method="POST" action="/signup/add" onsubmit="return validate() "> 
                       
                           <tr>
                               <td>name:</td>
-                              <td><input type="text" class="form-control" id="name"></td>
+                              <td><input type="text"  name ="name" class="form-control" id="name"></td>
                           </tr>
                           <tr>
                               <td>D.O.B:</td>
-                              <td><input type="date" class="form-control" id="dob"></td>
+                              <td><input type="date" name="date" class="form-control" id="dob"></td>
                           </tr>
                           <tr>
                               <td>address:</td>
-                              <td><input type="text" class="form-control" id="address"></td>
+                              <td><input type="text" name="address" class="form-control" id="address"></td>
                           </tr>
                           <tr>
                            <td>gender:</td>
                            <td>
-                               <select class="form-control">
+                               <select class="form-control" name="gender">
                                    <option value="male">male</option>
                                    <option value="female">female</option>
                                    <option value="other">other</option>
@@ -127,15 +127,15 @@
                        </tr>
                           <tr>
                               <td>email:</td>
-                              <td><input type="email" class="form-control" id="email"></td>
+                              <td><input type="email"  name="email" class="form-control" id="email"></td>
                           </tr>
                           <tr>
                               <td>phone:</td>
-                              <td><input type="number" class="form-control" id="phone"></td>
+                              <td><input type="number" name="phone" class="form-control" id="phone"></td>
                           </tr>
                           <tr>
                               <td>password:</td>
-                              <td><input type="password" class="form-control" id="password1"></td>
+                              <td><input type="password" name="password" class="form-control" id="password1"></td>
                               
                           </tr>
                           <tr>

@@ -18,7 +18,7 @@ app.use('/admin',adminRouter);
 app.use('/admin1',admin1Router);
 app.get('/',function(req,res){
     res.render("index",{
-        nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'},{link:'/admin',name:'ADD BOOK'},{link:'/admin1',name:'ADD AUTHOR'}],
+        nav : [{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'}],
         
         title:'Library'
     });

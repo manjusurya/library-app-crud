@@ -28,7 +28,7 @@ booksRouter.get('/',function(req,res){
     Bookdata.find()
     .then(function(books){
         res.render("books",{
-        nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'}],
+        nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'},{link:'/admin',name:'ADD BOOK'},{link:'/admin1',name:'ADD AUTHOR'}],
         title:'Library',
         books //THIS IS BOOKS ARRAY
     });
@@ -40,7 +40,7 @@ booksRouter.get('/',function(req,res){
      Bookdata.findOne({_id:id})
      .then(function(book){
         res.render('book',{
-            nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'}],
+            nav : [{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/login',name:'LOGIN'},{link:'/signup',name:'SIGNUP'},{link:'/admin',name:'ADD BOOK'},{link:'/admin1',name:'ADD AUTHOR'}],
             title:'Library', 
             book
 
@@ -48,6 +48,8 @@ booksRouter.get('/',function(req,res){
     
      });
  });
+
+
 
  
  
